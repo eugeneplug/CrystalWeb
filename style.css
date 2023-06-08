@@ -177,3 +177,65 @@ main {
     top: 50px;
     left: 85px;
 }
+/*section2*/
+.section2 {
+    width: 1280px;
+    margin: 0 auto;
+}
+.section2Content {
+    display: flex;
+    justify-content: space-evenly;
+}
+.section2ContentBlock1 {
+    width: 580px;
+    height: 600px;
+    margin-top: 150px;
+    background-image: url(/img/crystals\ 1.png);
+
+}
+.section2ContentBlock1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    top: 547px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/*block2*/
+.section2ContentBlock2 {
+    width: 581px;
+    height: 609px;
+    margin-top: 150px;
+}
+.section2ContentBlock2Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.section2ContentBlock2Text p {
+    width: 200px;
+    text-align: center;
+}
+.section2ContentBlock2Text h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.section2ContentBlock2Text svg {
+    margin-top: 10px;
+}
