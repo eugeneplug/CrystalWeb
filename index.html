@@ -116,10 +116,93 @@
 
     </div>
 
-    <div class="section3"></div>
+    <div class="section3">
+        <div class="section3Block1">
+            
+            <div class="section3CrystalBlock">
+                <h1>Popular Crystals</h1>
+
+
+                <ul>
+                    <li id="list" class="li1 active"><div> <img src="/img/li1.png" alt=""><p>Rose Quartz</p></div></li>
+                    <li class="li2"><div><img src="/img/li2.png" alt=""><p>Pyrite</p></div></li>
+                    <li class="li3"> <div><img src="/img/li3.png" alt=""><p>Shungite</p></div></li>
+                    <li class="li4"> <div><img src="/img/li4.png" alt=""><p>Amethyst</p></div></li>
+                    <li class="li5"><div><img src="/img/li5.png" alt=""><p>Selenite</p></div></li>
+                </ul>
 
 
 
 
+
+                <a href="">Find your match</a>
+            </div>
+        </div>
+
+
+
+        <div class="section3Block2">
+            <div class="section3Block2Items"> 
+                <div class="itemCard card1">
+                    <p>Tower</p>
+                    <img src="/img/crystal1.png" alt="">
+                    <p>From $40</p>
+                </div>
+                <div class="itemCard card2">
+                    <p>Pyramid</p>
+                    <img src="/img/crystal2.png" alt="">
+                    <p>Sold Out</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+//     let button = document.querySelectorAll('li');
+
+//     button.addEventListener('click', function() {
+ 
+//   button.classList.add('active');
+// });
+
+
+
+// let buttons = document.querySelectorAll('li');
+
+// buttons.forEach(function(button) {
+//   button.addEventListener('click', function() {
+//     button.classList.add('active');
+//   });
+// });
+
+let buttons = document.querySelectorAll('li');
+
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Проверяем, есть ли другой элемент с классом "active"
+    let activeButton = document.querySelector('li.active');
+    
+    // Снимаем класс "active" с другого элемента, если он существует
+    if (activeButton && activeButton !== button) {
+      activeButton.classList.remove('active');
+    }
+    
+    // Применяем класс "active" к текущему элементу
+    button.classList.add('active');
+  });
+});
+
+
+
+
+
+
+
+
+
+</script>
 </body>
 </html>
+
