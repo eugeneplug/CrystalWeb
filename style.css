@@ -606,3 +606,34 @@ ul li:active {
     width: 180px;
     height: 180px;
 }
+/*footer*/
+footer {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: url(/img/footer.png);
+
+    background-position: -146px -16px;
+}
+.footerContent {
+    width: 1000px;
+    margin-left: 20px;
+}
+footer h1 {
+    font-size: 170px;
+    text-align: center;
+    font-weight: 100;
+}
+.footerContent ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+.footerContent li {
+    width: 150px;
+    margin: 5px;
+}
+.footerPrivacyPlocy {
+    margin-top: 30px;
+    margin-left: 20px;
+}
