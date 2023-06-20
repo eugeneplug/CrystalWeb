@@ -75,27 +75,27 @@ menu.addEventListener('animationend', () => {
 document.getElementById('search-button').addEventListener('click', function() {
   var searchInput = document.getElementById('search-input').value;
   
-  // Удаляем предыдущие подсветки
+  
   removeHighlights();
   
-  // Если введенная строка для поиска не пустая
+  
   if (searchInput.trim() !== '') {
-    // Создаем регулярное выражение для поиска с учетом регистра
+    
     var regex = new RegExp(searchInput, 'gi');
     
-    // Обходим все текстовые узлы на странице
+    
     var textNodes = getTextNodes(document.body);
     textNodes.forEach(function(node) {
       var text = node.nodeValue;
       
-      // Ищем совпадения в тексте
+      
       var matches = text.match(regex);
       
       if (matches && matches.length > 0) {
-        // Создаем фрагмент документа для хранения подсветок
+        
         var fragment = document.createDocumentFragment();
         
-        // Заменяем совпадения в тексте на подсвеченные совпадения
+       
         var highlightedText = text.replace(regex, function(match) {
           var span = document.createElement('span');
           span.className = 'highlight';
@@ -103,16 +103,16 @@ document.getElementById('search-button').addEventListener('click', function() {
           return span.outerHTML;
         });
         
-        // Создаем временный элемент для вставки подсвеченного текста
+        
         var tempElement = document.createElement('div');
         tempElement.innerHTML = highlightedText;
         
-        // Копируем подсвеченный текст во фрагмент документа
+       
         while (tempElement.firstChild) {
           fragment.appendChild(tempElement.firstChild);
         }
         
-        // Заменяем исходный текст на подсвеченный текст
+        
         node.parentNode.replaceChild(fragment, node);
       }
     });
